@@ -8,7 +8,7 @@ firebase_admin.initialize_app(cred)
 
 class DatabaseData:
 
-    # Initializing a connection to a SQLite database and configuring a connection to Firebase
+    # Initializing a connection to a SQLite database and configuring a connection to the Firebase
     def __init__(self):
         self.connection = sqlite3.connect("game_history.db")
         self.create_history_table()
